@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative + loop</description>
+   <name>TC-LOGIN-002-Invalid Login</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>843d5633-4dba-4d91-957f-aeb00d94f500</testCaseGuid>
+</TestCaseEntity>

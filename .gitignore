@@ -1,0 +1,38 @@
+.gradle
+
+bin
+
+# Katalon generated reports
+/Reports/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp
+
+# IDE / Eclipse generated files
+/bin/
+/Libs/
+.settings/
+.classpath
+
+Libs
+
+output
+
+!output/.gitkeep
+build
+
+.classpath
+
+.project
+
+.cache
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/

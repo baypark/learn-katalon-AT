@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive + dynamic object</description>
+   <name>TC-CART-001-Add Product</name>
+   <tag>Positive</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>064f3100-e2db-4caa-b902-0dfaae713acf</testCaseGuid>
+</TestCaseEntity>

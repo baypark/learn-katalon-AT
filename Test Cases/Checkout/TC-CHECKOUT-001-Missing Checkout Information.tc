@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative + Missing Checkout</description>
+   <name>TC-CHECKOUT-001-Missing Checkout Information</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0954a94c-9f94-4878-af46-993e204abc57</testCaseGuid>
+</TestCaseEntity>

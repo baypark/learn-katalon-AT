@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive + Valid Login</description>
+   <name>TC-LOGIN-001-Valid Login</name>
+   <tag>Positive</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0cef988a-ecf9-410e-be2e-7bb782fec13c</testCaseGuid>
+</TestCaseEntity>

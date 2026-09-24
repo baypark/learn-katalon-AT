@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>E2E Flow Order Created</description>
+   <name>TC-CHECKOUT-002-Order Created</name>
+   <tag>Positive</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0529e840-64d7-43d8-ac21-82e83eb1c0b7</testCaseGuid>
+</TestCaseEntity>
