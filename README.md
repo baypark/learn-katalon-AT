@@ -89,7 +89,7 @@ Learning Katalon-AT Saucedemo/
 ├── README.md
 └── .gitignore
 
-# ⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 Before running the automation project, make sure the following are available:
 
@@ -119,7 +119,7 @@ Example:
 
 `Test credentials are intended for the SauceDemo test environment only.`
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Technology             | Purpose                    |
 | ---------------------- | -------------------------- |
@@ -142,7 +142,7 @@ Example:
 | `Missing_First_Name`| last Name      | 17530        |
 
 
-# 📊 Test Data
+## 📊 Test Data
 
 Test data is separated from test logic where appropriate.
 
@@ -157,7 +157,7 @@ The default execution profile contains reusable configuration values such as:
 These variables are used by multiple test cases.
 
 
-# 🧪 Test Coverage
+## 🧪 Test Coverage
 
 The project currently covers five core scenarios.
 
@@ -169,7 +169,7 @@ TC-CHECKOUT-001	Missing Checkout Information	Negative / Validation	Required fiel
 TC-CHECKOUT-002	Successful Checkout	Positive / E2E	Complete checkout flow
 
 
-# 🧩 Test Suites
+## 🧩 Test Suites
 TS-SauceDemo-Regression
 
 The main regression Test Suite contains the five core automated scenarios:
@@ -186,7 +186,7 @@ Each test case manages its own browser session to maintain test isolation.
 The Test Suite provides a single execution point for validating the core SauceDemo flow
 
 
-# ▶️ How to Run
+## ▶️ How to Run
 `Option 1 - Run Individual Test Case`
 - Open the project in Katalon Studio.
 - Navigate to Test Cases.
@@ -202,7 +202,7 @@ The Test Suite provides a single execution point for validating the core SauceDe
 - Click Run.
 - Review the execution result.
 
-# 📈 Test Reporting
+## 📈 Test Reporting
 
 Katalon Studio provides execution results and test reports after the test
 suite execution.
@@ -220,6 +220,6 @@ The assessment requires the automation project to include evidence of the
 Katalon Test Report or execution log.
 
 
-# 👤 Author
+## 👤 Author
 ---
 Bayu Ahmad Prakoso | QA Engineer
