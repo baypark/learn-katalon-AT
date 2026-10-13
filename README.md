@@ -1,225 +1,137 @@
-# SauceDemo Web Automation - Katalon Studio
+# saucedemo_web_automation_readme
 
-## 📌 Project Description
+# 🧪 SauceDemo Web Automation - Katalon Studio
 
-This project contains an automated UI testing framework for **SauceDemo**
-using **Katalon Studio**.
+An automated End-to-End (E2E) UI testing framework built with **Katalon Studio** for the SauceDemo web application. Designed to demonstrate industry-standard Quality Assurance (QA) practices and practical UI automation design patterns.
 
-The purpose of this project is to demonstrate practical Software Quality
-Assurance and UI automation capabilities, including:
+## 📌 Overview
 
-- Functional UI testing
-- Positive and negative test scenarios
-- Edge case testing
-- Dynamic element handling
-- Explicit wait strategies
-- Data-driven testing
-- Basic programming logic
-- Page-based Object Repository organization
-- Test Suite execution
-- Automated test reporting
+This project showcases an automated testing suite designed to validate core e-commerce features, including positive/negative scenarios, edge cases, and data-driven validation.
 
-The automation covers the main user journey:
+### Key Highlights & Technical Capabilities
 
-**Login → Product → Cart → Checkout → Order Completion**
+- **Design Pattern:** Modular Page-Based Object Repository organization.
+- **Synchronization:** Explicit wait strategies and dynamic element handling.
+- **Test Design:** Data-Driven Testing (DDT) using external datasets and global profiles.
+- **Execution Strategy:** Isolated browser sessions per test case inside structured Test Suites.
+- **Reporting:** Detailed test result reporting with automated execution logs and evidence capture.
 
-The project was created as part of a QA automation assessment.
+### 🔄 End-to-End User Journey Covered
 
----
-
-# 📁 Project Structure
-
-```text
-Learning Katalon-AT Saucedemo/
-│
-├── Data Files/
-│   └── Checkout_Data
-│
-├── Object Repository/
-│   │
-│   ├── Login_page/
-│   │   ├── Username_input
-│   │   ├── Password_input
-│   │   ├── Login_button
-│   │   └── Error_message
-│   │
-│   ├── Products_page/
-│   │   ├── Products_title
-│   │   ├── Add_to_cart_button
-│   │   ├── Cart_badge
-│   │   └── Cart_Icon
-│   │
-│   ├── Cart_page/
-│   │   ├── Cart_title
-│   │   ├── Cart_items
-│   │   ├── Cart_item
-│   │   └── Checkout_button
-│   │
-│   └── Checkout_page/
-│       ├── Checkout_title
-│       ├── First_name_input
-│       ├── Last_name_input
-│       ├── Postal_code_input
-│       ├── Continue_button
-│       ├── Checkout_error
-│       ├── Overview_title
-│       ├── Overview_item
-│       ├── Finish_button
-│       └── Success_message
-│
-├── Profiles/
-│   └── default/
-│       └── Global Variables
-│
-├── Test Cases/
-│   ├── Login/
-│   │   ├── TC_LOGIN_001_Valid_Login
-│   │   └── TC_LOGIN_002_Invalid_Login
-│   │
-│   ├── Cart/
-│   │   └── TC_CART_001_Add_Product
-│   │
-│   └── Checkout/
-│       ├── TC_CHECKOUT_001_Missing_Information
-│       └── TC_CHECKOUT_002_Successful_Checkout
-│
-├── Test Suites/
-│   └── TS-SauceDemo-Regression
-│
-├── README.md
-└── .gitignore
-
-## ⚙️ Prerequisites
-
-Before running the automation project, make sure the following are available:
-
-Required
-macOS / Windows
-Java Runtime Environment compatible with Katalon Studio
-Katalon Studio
-Google Chrome
-Git
-
-Application Under Test
-SauceDemo:
-
-https://www.saucedemo.com/
-
-# Test Credentials
-
-The project uses the credentials defined in the test cases and/or Global
-Variables.
-
-Example:
-
-| Username        | Password                       |
-| --------------- | ------------------------------ |
-| `standard_user` | secret_sauce                   |
-| `problem_user`  | secret_sauce                   |
-
-`Test credentials are intended for the SauceDemo test environment only.`
+```
+[ Login ] ➔ [ Product Catalog ] ➔ [ Shopping Cart ] ➔ [ Checkout Form ] ➔ [ Order Completion ]
+```
 
 ## 🛠️ Tech Stack
 
-| Technology             | Purpose                    |
-| ---------------------- | -------------------------- |
-| Katalon Studio         | UI test automation         |
-| Groovy                 | Test scripting             |
-| Selenium WebDriver     | Browser automation engine  |
-| Google Chrome          | Target browser             |
-| XPath                  | Web element identification |
+| Technology | Purpose |
+| --- | --- |
+| **Katalon Studio** | Core Test Automation Framework |
+| **Groovy / Java** | Test Scripting & Business Logic |
+| **Selenium WebDriver** | Underlying Browser Automation Engine |
+| **Google Chrome** | Target Execution Browser |
+| **XPath / CSS** | Dynamic Web Element Identification |
 
+## 📁 Project Structure
 
-# Data-Driven Testing
-
-Checkout data is maintained separately from the test script using Katalon Test Data.
-
-Example:
-
-|  FirstName          | LastName       | PostalCode   |
-| ------------------- | ---------------| --------------
-| Testing User        | new test       | 17530        |
-| `Missing_First_Name`| last Name      | 17530        |
-
-
-## 📊 Test Data
-
-Test data is separated from test logic where appropriate.
-
-Global Variables
-
-The default execution profile contains reusable configuration values such as:
-
-`BaseUrl`
-`validUsername`
-`validPassword`
-
-These variables are used by multiple test cases.
-
-
-## 🧪 Test Coverage
-
-The project currently covers five core scenarios.
-
-ID	Test Case	Type	Coverage
-TC-LOGIN-001	Valid Login	Positive	Successful authentication
-TC-LOGIN-002	Invalid Login	Negative	Invalid and locked credentials
-TC-CART-001	Add Product	Positive	Add product and validate cart
-TC-CHECKOUT-001	Missing Checkout Information	Negative / Validation	Required field validation
-TC-CHECKOUT-002	Successful Checkout	Positive / E2E	Complete checkout flow
-
-
-## 🧩 Test Suites
-TS-SauceDemo-Regression
-
-The main regression Test Suite contains the five core automated scenarios:
-
-TS-SauceDemo-Regression
+```
+Learning Katalon-AT Saucedemo/
 │
-├── TC-LOGIN-001-Valid-Login
-├── TC-LOGIN-002-Invalid-Login
-├── TC-CART-001-Add-Product
-├── TC-CHECKOUT-001-Missing-Checkout-Information
-└── TC-CHECKOUT-002-Successful-Checkout
+├── 📂 Data Files/
+│   └── Checkout_Data                     # Data-driven test datasets
+│
+├── 📂 Object Repository/                 # Modular Page Objects
+│   ├── 📁 Login_page/                    # Selectors for Login View
+│   ├── 📁 Products_page/                 # Selectors for Catalog View
+│   ├── 📁 Cart_page/                     # Selectors for Shopping Cart
+│   └── 📁 Checkout_page/                 # Selectors for Checkout Flow
+│
+├── 📂 Profiles/
+│   └── default/                          # Global Variables & Execution Environments
+│
+├── 📂 Test Cases/                        # Individual Automated Scenarios
+│   ├── 📁 Login/
+│   ├── 📁 Cart/
+│   └── 📁 Checkout/
+│
+├── 📂 Test Suites/
+│   └── TS-SauceDemo-Regression           # E2E Regression Test Suite
+│
+├── .gitignore
+└── README.md
+```
 
-Each test case manages its own browser session to maintain test isolation.
-The Test Suite provides a single execution point for validating the core SauceDemo flow
+## 🧪 Test Scenarios & Coverage
 
+The regression suite currently covers **5 high-priority core scenarios**:
 
-## ▶️ How to Run
-`Option 1 - Run Individual Test Case`
-- Open the project in Katalon Studio.
-- Navigate to Test Cases.
-- Select the desired test case.
-- Select the Chrome execution profile.
-- Click Run.
+| Scenario ID | Test Case | Test Type | Coverage Focus |
+| --- | --- | --- | --- |
+| **`TC-LOGIN-001`** | Valid Login | **Positive** | Successful user authentication |
+| **`TC-LOGIN-002`** | Invalid Login | **Negative** | Invalid, empty, and locked-out user validation |
+| **`TC-CART-001`** | Add Product | **Positive** | Product selection and dynamic cart badge update |
+| **`TC-CHECKOUT-001`** | Missing Info | **Negative** | Form validation & mandatory field error handling |
+| **`TC-CHECKOUT-002`** | Successful Checkout | **E2E** | Complete purchasing flow through order completion |
 
-`Option 2 - Run Regression Test Suite`
-- Open Katalon Studio.
-- Navigate to Test Suites.
-- OpenTS-SauceDemo-Regression
-- Select the desired browser.
-- Click Run.
-- Review the execution result.
+## 📊 Test Data & Execution Profiles
 
-## 📈 Test Reporting
+### 🔐 Test Credentials
 
-Katalon Studio provides execution results and test reports after the test
-suite execution.
+The project utilizes configured credentials from test datasets and Global Variables.
 
-The report can be used to review:
+| Username | Password | Purpose |
+| --- | --- | --- |
+| `standard_user` | `secret_sauce` | Valid standard flow execution |
+| `problem_user` | `secret_sauce` | UI/UX error handling validation |
 
-- Passed test cases
-- Failed test cases
-- Execution duration
-- Test step results
-- Failure information
-- Screenshots/execution evidence where available
+> ⚠️ *Note: Test credentials are intended strictly for the public SauceDemo sandbox environment.*
+> 
 
-The assessment requires the automation project to include evidence of the
-Katalon Test Report or execution log.
+### 📄 Data-Driven Testing (DDT)
 
+Checkout scenarios dynamically inject data from external datasets (e.g., `Checkout_Data`):
+
+| First Name | Last Name | Postal Code | Expected Result |
+| --- | --- | --- | --- |
+| `Testing User` | `New Test` | `17530` | Successful Navigation |
+| `Missing_First_Name` | `Last Name` | `17530` | Trigger Validation Error |
+
+## ⚙️ Prerequisites
+
+Ensure you have the following installed before running the suite:
+
+- **OS:** macOS or Windows
+- **JDK:** Java Runtime Environment (compatible with Katalon Studio)
+- **IDE:** Katalon Studio
+- **Browser:** Google Chrome (Latest Version)
+- **VCS:** Git
+
+## ▶️ Execution Guide
+
+### Option 1: Run an Individual Test Case
+
+1. Launch **Katalon Studio** and open this project directory.
+2. Navigate to **Test Cases** in the *Tests Explorer* side panel.
+3. Select any test case (e.g., `Test Cases/Login/TC_LOGIN_001_Valid_Login`).
+4. Select **Chrome** from the top execution toolbar dropdown.
+5. Click **Run** (`Ctrl + R` / `Cmd + R`).
+
+### Option 2: Execute Full Regression Test Suite
+
+1. In the *Tests Explorer*, open `Test Suites/TS-SauceDemo-Regression`.
+2. Ensure target browser is set to **Chrome**.
+3. Click **Run** to execute all 5 scenarios sequentially.
+4. Review execution logs and real-time pass/fail status in the *Job Progress* tab.
+
+## 📈 Test Execution & Reporting
+
+Upon completion of a Test Suite run, Katalon Studio generates comprehensive test execution reports containing:
+
+- ✅ **Pass / Fail Summary & Execution Duration**
+- 📝 **Step-by-step Log Details**
+- 📸 **Automated Screenshots on Failure Evidence**
+- 📊 **Exportable Formats:** HTML, PDF, CSV, or JUnit XML
 
 ## 👤 Author
----
-Bayu Ahmad Prakoso | QA Engineer
+
+**Bayu Ahmad Prakoso - QA Engineer**
